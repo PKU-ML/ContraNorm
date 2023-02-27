@@ -1,13 +1,14 @@
 # Text classification examples
 # ContraNorm 
-Official pytorch source code for ContraNorm [paper](https://openreview.net/pdf?id=SM7XkJouWHm) (ICLR 2023). The code is based on transformers library [code](https://github.com/huggingface/transformers) builed by hugging-face.
+Official pytorch source code for ContraNorm [paper](https://openreview.net/pdf?id=SM7XkJouWHm) (ICLR 2023). The code is based on [transformers library](https://github.com/huggingface/transformers) builed by hugging-face.
 
 ## GLUE tasks
 
 **BERT base**
+
 Based on the script [`run_glue_no_trainer.py`](https://github.com/PKU-ML/ContraNorm/blob/main/bert/run_glue_no_trainer.py).
 
-You can run Bert with ContraNorm with different normalization scales and plugging position with [`run_glue_baselines.sh`](https://github.com/PKU-ML/ContraNorm/blob/main/bert/run_glue_baselines.sh)
+You can run Bert with ContraNorm of different normalization scales and plugging position using [`run_glue_baselines.sh`](https://github.com/PKU-ML/ContraNorm/blob/main/bert/run_glue_baselines.sh)
 
 ```
 bash run_glue_baselines.sh $TASK_NAME $SCALE $POS $DEVICE
@@ -27,4 +28,8 @@ The single number in the command is the index of GPU.
 
 
 **ALBERT base**
+
 Likewise, you can run AlBert with ContraNorm on GLUE tasks with [`run_glue_baselines_al.sh`](https://github.com/PKU-ML/ContraNorm/blob/main/bert/run_glue_baselines_al.sh) and [`run_different_baselines_al.sh`](https://github.com/PKU-ML/ContraNorm/blob/main/bert/run_different_baselines_al.sh)
+
+
+## citation

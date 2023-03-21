@@ -4,7 +4,7 @@ Official pytorch code for ICLR 2023 paper [ContraNorm: A Contrastive Learning Pe
 
 ## Introduction
 
-Our code is based on the implementation of [PairNorm](https://github.com/LingxiaoShawn/PairNorm). This code requires `pytorch_geometric>=1.3.2`. We mainly modify `NormLayer` in [layers.py](https://github.com/PKU-ML/ContraNorm/blob/gnn/layers.py). It is designed to be a direct drop-in replacement of the original PairNorm, though some hyperparameters needed to be set for it to work as expected. The implementation of this module may be of independent interest for other architectures besides `DeepGCN` in [models.py](https://github.com/PKU-ML/ContraNorm/blob/gnn/models.py).
+Our code is based on the implementation of [PairNorm](https://github.com/LingxiaoShawn/PairNorm). This code requires `pytorch_geometric>=1.3.2`. We mainly modify `NormLayer` in [layers.py](https://github.com/PKU-ML/ContraNorm/blob/main/gnn/layers.py). It is designed to be a direct drop-in replacement of the original PairNorm, though some hyperparameters needed to be set for it to work as expected. The implementation of this module may be of independent interest for other architectures besides `DeepGCN` in [models.py](https://github.com/PKU-ML/ContraNorm/blob/main/gnn/models.py).
 
 ## ContraNorm
 

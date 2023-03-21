@@ -13,7 +13,7 @@ We evaluate ContraNorm on 1) GLUE tasks with BERT and ALBERT as backbones; 2) Im
 
 ## File Structures
 
-We organize our code in the following strucute. The detailed guidance is included in the README.md of each subfile ([BERT_gleu](https://github.com/PKU-ML/ContraNorm/tree/main/BERT_gleu), [GNN](https://github.com/PKU-ML/ContraNorm/tree/main/GNN) and [ViT_imagenet](https://github.com/PKU-ML/ContraNorm/tree/main/BERT_gleu)).
+We organize our code in the following strucute. The detailed guidance is included in the README.md of each subfile ([BERT_gleu](https://github.com/PKU-ML/ContraNorm/tree/main/BERT_gleu), [GNN](https://github.com/PKU-ML/ContraNorm/tree/main/GNN) and [ViT_imagenet](https://github.com/PKU-ML/ContraNorm/tree/main/ViT_imagenet)).
 
 ``` bash
 ContraNorm/

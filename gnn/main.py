@@ -27,10 +27,6 @@ parser.add_argument('--residual', type=int, default=0, help='Residual connection
 # for normalization
 parser.add_argument('--norm_mode', type=str, default='None', help='Mode for PairNorm, {None, PN, PN-SI, PN-SCS, CN}')
 parser.add_argument('--norm_scale', type=float, default=1.0, help='Row-normalization scale')
-parser.add_argument('--use_norm', action='store_true')
-parser.add_argument('--use_mean', action='store_true')
-parser.add_argument('--use_mask', action='store_true')
-parser.add_argument('--use_scale', action='store_true')
 parser.add_argument('--use_layer_norm', action='store_true')
 parser.add_argument('--initial_norm', action='store_true')
 

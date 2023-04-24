@@ -17,9 +17,7 @@ If you install and run GIANT correctly, you should only need to additionally ins
 ## Step 3: Run the experiment.
 Go to the folder `OGB`.
 
-For reproducing our results for ogbn-arxiv dataset with GIANT-XRT features, run
-`bash run_teacher.sh $gpu_id 2.0 2.0`, then
-`bash run_student.sh $gpu_id 2.0 5.0`
+For reproducing our results for ogbn-arxiv dataset with GIANT-XRT features, run `bash run_student.sh $gpu_id`
 
 ```
 New arguments
@@ -27,8 +25,6 @@ New arguments
 --dcn_scale $SCALE the scale of D-ContraNorm
 --tau $TAU the tau value for D-ContraNorm
 --gpu $GPU the index of gpu
---data_root_dir: path to save ogb datasets.
---pretrain_path: path to load GIANT-XRT features. Set it to 'None' for using ogb default features.
 ``` 
 
 ## Results
@@ -36,12 +32,12 @@ If execute correctly, you should have the following performance (using pretraine
 
 |  | GIANT + RevGAT + KD | GIANT + RevGAT + KD + D-ContraNorm |
 |---|---|---|
-| Average val accuracy (%) | 77.16 ± 0.09  |  |
-| Average test accuracy (%) | 76.15 ± 0.10 |  |
+| Average val accuracy (%) | 77.16 ± 0.09  | 76.99 ± 0.02 |
+| Average test accuracy (%) | 76.15 ± 0.10 | 76.36 ± 0.13 |
 
 Number of params: 1304912
 
-**Remark:** We do not carefully fine-tune RevGAT for our GIANT-XRT. It is possible to achieve higher performance by fine-tune it more carefully. For more details about RevGAT, please check the original README.
+**Remark:** We do not carefully fine-tune RevGAT. It is possible to achieve higher performance by fine-tune it more carefully. For more details about RevGAT, please check the original README.
 
 ## Citation
 If you find our code useful, please cite our ContraNorm paper and the GIANT and RevGAT references provided in the original repo.
